@@ -245,6 +245,25 @@ def remove_async_files():
         os.remove(file_name)
 
 
+def remove_rewards_files():
+    shutil.rmtree("rewards")
+    shutil.rmtree("vue_frontend/src/rewards")
+
+
+def remove_vue_files():
+    shutil.rmtree("vue_frontend")
+
+
+def remove_vue_pycharm_files():
+    file_names = [
+        os.path.join(".idea", "runConfigurations", "npm_install.xml"),
+        os.path.join(".idea", "runConfigurations", "vite_build.xml"),
+        os.path.join(".idea", "runConfigurations", "vite_dev.xml"),
+    ]
+    for file_name in file_names:
+        os.remove(file_name)
+
+
 def remove_dottravisyml_file():
     os.remove(".travis.yml")
 
@@ -523,6 +542,12 @@ def main():
 
     if "{{ cookiecutter.use_async }}".lower() == "n":
         remove_async_files()
+
+    if "{{ cookiecutter.use_vue }}".lower() == "n":
+        remove_vue_files()
+
+    if "{{ cookiecutter.editor }}" == "PyCharm" and "{{cookiecutter.use_vue}}".lower() == "n":
+        remove_vue_pycharm_files()
 
     print(SUCCESS + "Project initialized, keep up the good work!" + TERMINATOR)
 

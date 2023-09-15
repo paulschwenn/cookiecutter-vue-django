@@ -51,7 +51,8 @@ services:
     volumes:
       - ./docs:/docs:z
       - ./config:/app/config:z
-      - ./{{ cookiecutter.project_slug }}:/app/{{ cookiecutter.project_slug }}:z
+      - ./{{ cookiecutter.project_slug }}:/app/{{ cookiecutter.project_slug }}:z{%- if cookiecutter.use_vue == 'y' %}
+      - ./rewards:/app/rewards:z{%- endif %}
     ports:
       - '9000:9000'
     command: /start-docs
@@ -126,5 +127,23 @@ services:
       # Expose browsersync UI: https://www.browsersync.io/docs/options/#option-ui
       - '3001:3001'
       {%- endif %}
+
+  {%- endif %}
+  {%- if cookiecutter.use_vue == 'y' %}
+
+  vite:
+    build:
+      context: .
+      dockerfile: ./compose/local/vite/Dockerfile
+    image: my_awesome_vue_project_local_vite
+    container_name: my_awesome_vue_project_local_vite
+    depends_on:
+      - django
+    volumes:
+      - .:/app:z
+      - /app/vue_frontend/node_modules
+    command: vite dev
+    ports:
+      - '5173:5173'
 
   {%- endif %}

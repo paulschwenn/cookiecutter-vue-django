@@ -11,13 +11,13 @@ with open("README.md") as readme_file:
     long_description = readme_file.read()
 
 setup(
-    name="cookiecutter-django",
+    name="cookiecutter-vue3-django",
     version=version,
-    description=("A Cookiecutter template for creating production-ready " "Django projects quickly."),
+    description=("A Vue3 + Vite template for creating production-ready Django projects quickly."),
     long_description=long_description,
-    author="Daniel Roy Greenfeld",
-    author_email="pydanny@gmail.com",
-    url="https://github.com/cookiecutter/cookiecutter-django",
+    author="Mike Hoolehan, Daniel Roy Greenfeld",
+    author_email="mike@hoolehan.com",
+    url="https://github.com/ilikerobots/cookiecutter-django",
     packages=[],
     license="BSD",
     zip_safe=False,
@@ -32,10 +32,11 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: JavaScript",
         "Topic :: Software Development",
     ],
     keywords=(
-        "cookiecutter, Python, projects, project templates, django, "
-        "skeleton, scaffolding, project directory, setup.py"
+        "cookiecutter, vue, vite, Python, projects, project templates, django, "
+        "skeleton, scaffolding"
     ),
 )

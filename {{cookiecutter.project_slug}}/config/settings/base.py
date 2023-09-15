@@ -101,6 +101,9 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "{{ cookiecutter.project_slug }}.users",
+{%- if cookiecutter.use_vue == "y" %}
+    "rewards.apps.RewardsConfig",
+{%- endif %}
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -383,6 +386,15 @@ WEBPACK_LOADER = {
     }
 }
 
+{% endif -%}
+{% if cookiecutter.use_vue == "y" %}
+# Vue
+# -------------------------------------------------------------------------------
+VUE_FRONTEND_USE_DEV_SERVER = DEBUG
+VUE_FRONTEND_DEV_SERVER_URL = 'http://localhost:5173'
+VUE_FRONTEND_DEV_SERVER_PATH = 'src/'
+VUE_FRONTEND_STATIC_DIR = 'vue'
+VUE_FRONTEND_USE_TYPESCRIPT = False
 {%- endif %}
 # Your stuff...
 # ------------------------------------------------------------------------------

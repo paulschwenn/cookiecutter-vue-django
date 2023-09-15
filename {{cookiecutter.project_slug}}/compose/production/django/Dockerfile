@@ -24,6 +24,19 @@ ENV DJANGO_AZURE_ACCOUNT_NAME=${DJANGO_AZURE_ACCOUNT_NAME}
 RUN npm run build
 
 {%- endif %}
+
+{% if cookiecutter.use_vue == "y" -%}
+FROM node:18-bullseye-slim as vite-builder
+
+ARG APP_HOME=/app
+COPY . ${APP_HOME}
+WORKDIR ${APP_HOME}/vue_frontend
+
+COPY ./vue_frontend/package.json ${APP_HOME}
+RUN npm install
+RUN npm run build && npm cache clean --force
+{%- endif %}
+
 # define an alias for the specific python version used in this file.
 FROM python:3.11.5-slim-bullseye as python
 
@@ -114,6 +127,9 @@ RUN chmod +x /start-flower
 COPY --from=client-builder --chown=django:django ${APP_HOME} ${APP_HOME}
 {% else %}
 COPY --chown=django:django . ${APP_HOME}
+{%- endif %}
+{%- if cookiecutter.use_vue == "y" %}
+COPY --from=vite-builder --chown=django:django ${APP_HOME}/{{cookiecutter.project_slug}}/static/vue ${APP_HOME}/{{cookiecutter.project_slug}}/static/vue
 {%- endif %}
 
 # make django owner of the WORKDIR directory as well.

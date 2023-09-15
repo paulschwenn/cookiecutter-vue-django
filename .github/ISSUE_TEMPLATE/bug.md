@@ -57,7 +57,7 @@ labels: bug
 Logs:
 <details>
 <pre>
-$ cookiecutter https://github.com/cookiecutter/cookiecutter-django
+$ cookiecutter https://github.com/ilikerobots/cookiecutter-django
 project_name [Project Name]: ...
 </pre>
 </details>

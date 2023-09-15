@@ -132,6 +132,8 @@ SUPPORTED_COMBINATIONS = [
     {"keep_local_envs_in_vcs": "n"},
     {"debug": "y"},
     {"debug": "n"},
+    {"use_vue": "y"},
+    {"use_vue": "n"},
 ]
 
 UNSUPPORTED_COMBINATIONS = [

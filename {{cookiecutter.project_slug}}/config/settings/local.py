@@ -99,5 +99,11 @@ CELERY_TASK_EAGER_PROPAGATES = True
 WEBPACK_LOADER["DEFAULT"]["CACHE"] = not DEBUG  # noqa: F405
 
 {%- endif %}
+{%- if cookiecutter.use_vue == "y" %}
+# Vue
+# -------------------------------------------------------------------------------
+VUE_FRONTEND_USE_DEV_SERVER = True
+{%- endif %}
+
 # Your stuff...
 # ------------------------------------------------------------------------------

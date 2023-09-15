@@ -16,6 +16,38 @@ Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings
 
 ## Basic Commands
 
+{%- if cookiecutter.use_vue.lower() == "y" %}
+### Running the Vite Dev Server
+
+This app integrates with a Vue frontend located in `vue_frontend`. 
+
+{%- if cookiecutter.use_docker.lower() == "y" %}
+##### With Docker
+The Vite dev server will automatically run in docker when started with the local.yml configuration.
+```sh
+docker-compose -f local.yml up
+```
+
+{% endif %}
+{%- if cookiecutter.editor == "PyCharm" %}
+##### With PyCharm
+The Vite dev server may be run {%- if cookiecutter.use_docker.lower() == "y" %} on the host {% endif -%} from PyCharm using the pre-built run configurations.  First, ensure that 
+PyCharm project's Node interpreter is properly set (Languages & Frameworks -> Node.js), then run the run 
+configuration named ```npm install```.  After that, run the configuration named `vite dev` to launch Vite dev server.
+{% endif %}
+
+##### From the console
+{% if cookiecutter.use_docker.lower() == "y" or cookiecutter.editor == "PyCharm" %}Alternatively you,{%- else-%}You {%- endif %} may run the Vite dev server directly from the project directory:
+```sh
+cd vue_frontend
+npm install
+npm run dev
+````
+
+For more information, refer to the [Vue3 Vite Django Cookiecutter project](https://github.com/ilikerobots/cookiecutter-vue-django).
+
+{%endif %}
+
 ### Setting Up Your Users
 
 - To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
@@ -126,6 +158,32 @@ You must set the DSN url in production.
 ## Deployment
 
 The following details how to deploy this application.
+{%- if cookiecutter.use_vue.lower() == "y" %}
+
+### Vue
+
+For production deployment, the Vue frontend must be built into static resources, which will be served
+using the same Django staticfiles strategy as the rest of your site.  
+
+If you are using the production Docker configuration, this will be performed automatically when the images are built.  
+
+Otherwise, you must build the static assets yourself as part of your build and deploy process, sometime before the 
+`collectstatic` management command is run. The static assets may be built by running `npm run build` from within the 
+`vue_frontend` directory. The resulting files will be placed into the `{{cookiecutter.project_slug}}/static/vue` directory 
+and are handled subsequently as standard static assets. 
+
+Note the setting `VUE_FRONTEND_USE_DEV_SERVER` dictates whether your Django app will be expecting to serve Vue assets 
+from the Vite Dev Server or from a static build.  This setting defaults to the same as `DEBUG`, but can be modified as 
+needed. 
+
+{%- if cookiecutter.use_docker.lower() == "y" %}
+If you wish to build static Vue assets on the local Docker configuration, you may run:
+`docker-compose -f local.yml run vite vite build`
+{%- endif %}
+
+For more information, refer to the [Vue3 Vite Django Cookiecutter project](https://github.com/ilikerobots/cookiecutter-vue-django).
+
+{%- endif %}
 {%- if cookiecutter.use_heroku.lower() == "y" %}
 
 ### Heroku
