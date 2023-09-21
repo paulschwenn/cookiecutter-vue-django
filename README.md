@@ -1,7 +1,6 @@
 # Cookiecutter Vue3 + Vite + Django
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/ilikerobots/cookiecutter-django/ci.yml?branch=vue3-vite)](https://github.com/ilikerobots/cookiecutter-django/actions/workflows/ci.yml?query=branch%3Avue3-vite)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ilikerobots/cookiecutter-django/vue3-vite.svg)](https://results.pre-commit.ci/latest/github/ilikerobots/cookiecutter-django/vue3-vite)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 
@@ -10,9 +9,7 @@ Have the best of both front-ends by embedding your Vue components directly into 
 
 Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
-- Documentation: <https://cookiecutter-vue3-django.readthedocs.io/en/latest/>
-- If you have problems with this Cookiecutter, please open an [issue](https://github.com/ilikerobots/cookiecutter-django/issues/new).
-
+***Note***: *There is also an older, outdated [Webpack version of this cookiecutter](https://github.com/ilikerobots/cookiecutter-vue-django/tree/master).*
 
 ## Features
 
@@ -62,7 +59,7 @@ docker compose -f local.yml up
 If for any reason you wish to build a static build on the local docker configuration, you may run:
 `docker-compose -f local.yml run vite vite build`
 
-#### With Pycharm
+#### With PyCharm
 
 The Vite dev server may be run from PyCharm using the pre-built run configurations.  First, ensure that 
 PyCharm project's Node interpreter is properly set (Languages & Frameworks -> Node.js), then run the run 
@@ -91,7 +88,6 @@ the Vite Dev Server or from a static build.  This setting defaults to the same a
 #### With Docker
 
 The production docker configuration includes the Vite build step automatically when the images are built.
-
 
 
 #### With Pycharm
