@@ -1,6 +1,6 @@
 # Cookiecutter Vue3 + Vite + Django
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/ilikerobots/cookiecutter-django/ci.yml?branch=master)](https://github.com/ilikerobots/cookiecutter-django/actions/workflows/ci.yml?query=branch%3Amaster)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ilikerobots/cookiecutter-django/ci.yml?branch=vue3-vite)](https://github.com/ilikerobots/cookiecutter-django/actions/workflows/ci.yml?query=branch%3Avue3-vite)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ilikerobots/cookiecutter-django/vue3-vite.svg)](https://results.pre-commit.ci/latest/github/ilikerobots/cookiecutter-django/vue3-vite)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
@@ -11,7 +11,7 @@ Have the best of both front-ends by embedding your Vue components directly into 
 Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
 - Documentation: <https://cookiecutter-vue3-django.readthedocs.io/en/latest/>
-- If you have problems with this Cookiecutter, please open an [issues](https://github.com/ilikerobots/cookiecutter-django/issues/new).
+- If you have problems with this Cookiecutter, please open an [issue](https://github.com/ilikerobots/cookiecutter-django/issues/new).
 
 
 ## Features
