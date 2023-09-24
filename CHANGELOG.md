@@ -3,6 +3,72 @@ All enhancements and patches to Cookiecutter Django will be documented in this f
 
 <!-- GENERATOR_PLACEHOLDER -->
 
+## 2023.09.23
+
+
+### Updated
+
+- Update psycopg to 3.1.11 ([#4595](https://github.com/cookiecutter/cookiecutter-django/pull/4595))
+
+- Auto-update pre-commit hooks ([#4591](https://github.com/cookiecutter/cookiecutter-django/pull/4591))
+
+- Update drf-spectacular to 0.26.5 ([#4594](https://github.com/cookiecutter/cookiecutter-django/pull/4594))
+
+## 2023.09.21
+
+
+### Updated
+
+- Auto-update pre-commit hooks ([#4589](https://github.com/cookiecutter/cookiecutter-django/pull/4589))
+
+- Update djlint to 1.34.0 ([#4590](https://github.com/cookiecutter/cookiecutter-django/pull/4590))
+
+## 2023.09.19
+
+
+### Updated
+
+- Auto-update pre-commit hooks ([#4588](https://github.com/cookiecutter/cookiecutter-django/pull/4588))
+
+- Update djlint to 1.33.0 ([#4587](https://github.com/cookiecutter/cookiecutter-django/pull/4587))
+
+## 2023.09.16
+
+
+### Updated
+
+- Auto-update pre-commit hooks ([#4586](https://github.com/cookiecutter/cookiecutter-django/pull/4586))
+
+## 2023.09.15
+
+
+### Updated
+
+- Update flake8-isort to 6.1.0 ([#4585](https://github.com/cookiecutter/cookiecutter-django/pull/4585))
+
+- Update pillow to 10.0.1 ([#4584](https://github.com/cookiecutter/cookiecutter-django/pull/4584))
+
+## 2023.09.14
+
+
+### Updated
+
+- Update sphinx to 7.2.6 ([#4583](https://github.com/cookiecutter/cookiecutter-django/pull/4583))
+
+## 2023.09.13
+
+
+### Updated
+
+- Update sentry-sdk to 1.31.0 ([#4582](https://github.com/cookiecutter/cookiecutter-django/pull/4582))
+
+## 2023.09.12
+
+
+### Updated
+
+- Update django-storages to 1.14 ([#4564](https://github.com/cookiecutter/cookiecutter-django/pull/4564))
+
 ## 2023.09.11
 
 
