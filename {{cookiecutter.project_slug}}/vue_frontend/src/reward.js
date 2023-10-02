@@ -1,8 +1,8 @@
 import {createApp} from 'vue'
 import {createPinia} from 'pinia'
-import DjangoUtilsPlugin from '@ilikerobots/vue-plugin-django-utils'
+import DjangoUtilsPlugin from 'vue-plugin-django-utils'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
-import {convertDatasetToProps} from '@ilikerobots/vue-plugin-django-utils'
+import {convertDatasetToProps} from 'vue-plugin-django-utils'
 
 import RewardClaim from "@/components/RewardClaim.vue";
 import PointsStatus from "@/components/PointsStatus.vue";

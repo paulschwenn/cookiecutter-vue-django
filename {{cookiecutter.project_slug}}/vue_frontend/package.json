@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ilikerobots/vue-plugin-django-utils": "^0.1.4",
+    "vue-plugin-django-utils": "^0.1.5",
     "pinia": "^2.1.6",
     "pinia-plugin-persistedstate": "^3.2.0",
     "vite-plugin-css-injected-by-js": "^3.3.0",
