@@ -92,6 +92,9 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "corsheaders",
+{%- if cookiecutter.use_vue == "y" %}
+    "django_vue_utilities",
+{%- endif %}
     "drf_spectacular",
 {%- endif %}
 {%- if cookiecutter.frontend_pipeline == 'Webpack' %}

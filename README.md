@@ -5,7 +5,7 @@
 
 
 Vue 3 (Vite) Cookiecutter Django jumpstarts a production-ready, developer-friendly Django + Vue project quickly.
-Have the best of both front-ends by embedding your Vue components directly into Django Templates.
+Have the best of both front-ends by mounting Vue components directly into Django Templates.
 
 Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
@@ -15,14 +15,14 @@ Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
 - Harmonious integration of Django Templates and Vue 3 
 - Vue Single File Components (SFCs)
-- Vite Frontend Tooling including Vue Developer Tools
+- Vite-based build
+- Lightning fast Hot Module Replacement (HMR) for Vue components
 - Pinia state management, shared among any components on the same template
 - Persistent state across page loads
 - Pass data from Django to Vue 
   - Property passing from Template -> Root Vue Component
   - Provide/Inject from Template -> Vue
   - "Django Slots" to pass arbitrary HTML to Vue components
-- Lightning Fast Hot Module Replacement (HMR) 
 - Vue devtools support
 - Sass/SCSS pre-compilation of Vue Components
 - Chunked resource loading 

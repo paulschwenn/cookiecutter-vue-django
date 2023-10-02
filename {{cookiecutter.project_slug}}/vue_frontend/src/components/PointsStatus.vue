@@ -1,7 +1,6 @@
 <script setup>
 import {computed, inject, ref, watch} from 'vue'
 import {useRewardStore} from "@/stores/reward";
-import {CSRF_TOKEN_KEY} from "@/util/create_app_utils";
 
 defineOptions({ name: 'PointsStatus' })
 const props = defineProps({
@@ -15,7 +14,7 @@ const props = defineProps({
   },
 })
 
-const csrfToken = inject(CSRF_TOKEN_KEY)
+const csrfToken = inject('csrfToken')
 const addPointsUrl = inject('addPointsUrl');
 
 const rewardStore = useRewardStore()

@@ -1,4 +1,3 @@
-import {CSRF_TOKEN_KEY} from "@/util/create_app_utils";
 import {computed, inject, ref} from 'vue'
 import {defineStore} from 'pinia'
 
@@ -10,7 +9,7 @@ export const useRewardStore = defineStore('reward', () => {
         const submitInProgress = ref(false);
 
         const addPointsUrl = inject('addPointsUrl')
-        const csrfToken = inject(CSRF_TOKEN_KEY)
+        const csrfToken = inject('csrfToken')
 
         function redeem(rewardId, points) {
             rewardsRedeemed.value[rewardId] = true;
