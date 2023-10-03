@@ -3,6 +3,45 @@ All enhancements and patches to Cookiecutter Django will be documented in this f
 
 <!-- GENERATOR_PLACEHOLDER -->
 
+## 2023.09.29
+
+
+### Updated
+
+- Update django-storages to 1.14.1 ([#4604](https://github.com/cookiecutter/cookiecutter-django/pull/4604))
+
+## 2023.09.28
+
+
+### Updated
+
+- Update psycopg to 3.1.12 ([#4601](https://github.com/cookiecutter/cookiecutter-django/pull/4601))
+
+## 2023.09.27
+
+
+### Fixed
+
+- Fix ownership for /start-flower script in production Dockerfile ([#4603](https://github.com/cookiecutter/cookiecutter-django/pull/4603))
+
+## 2023.09.26
+
+
+### Updated
+
+- Update redis to 5.0.1 ([#4600](https://github.com/cookiecutter/cookiecutter-django/pull/4600))
+
+## 2023.09.25
+
+
+### Updated
+
+- Update django-upgrade to 1.15.0 ([#4598](https://github.com/cookiecutter/cookiecutter-django/pull/4598))
+
+- Update django-allauth to 0.57.0 ([#4597](https://github.com/cookiecutter/cookiecutter-django/pull/4597))
+
+- Auto-update pre-commit hooks ([#4596](https://github.com/cookiecutter/cookiecutter-django/pull/4596))
+
 ## 2023.09.23
 
 
