@@ -9,7 +9,6 @@ Have the best of both front-ends by mounting Vue components directly into Django
 
 Read the companion article [Django + Vue + Vite: REST Not Required](https://medium.com/@ilikerobots/django-vue-vite-rest-not-required-ca63cfa558fd), which explains the techniques used in this cookiecutter.
 
-*Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter)*. *There is also an older, outdated [Webpack version of this cookiecutter](https://github.com/ilikerobots/cookiecutter-vue-django/tree/master).*
 
 ## Features
 
@@ -101,3 +100,6 @@ From the `vue_frontend` directory:
 npm run build
 ```
 
+----
+
+*Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter)*. *There is also an older, outdated [Webpack version of this cookiecutter](https://github.com/ilikerobots/cookiecutter-vue-django/tree/master).*
