@@ -3,6 +3,63 @@ All enhancements and patches to Cookiecutter Django will be documented in this f
 
 <!-- GENERATOR_PLACEHOLDER -->
 
+## 2023.10.09
+
+
+### Updated
+
+- Bump stefanzweifel/git-auto-commit-action from 4.16.0 to 5.0.0 ([#4621](https://github.com/cookiecutter/cookiecutter-django/pull/4621))
+
+- Update django-storages to 1.14.2 ([#4620](https://github.com/cookiecutter/cookiecutter-django/pull/4620))
+
+## 2023.10.08
+
+
+### Updated
+
+- Auto-update pre-commit hooks ([#4619](https://github.com/cookiecutter/cookiecutter-django/pull/4619))
+
+## 2023.10.05
+
+
+### Updated
+
+- Update djangorestframework-stubs to 3.14.3 ([#4618](https://github.com/cookiecutter/cookiecutter-django/pull/4618))
+
+- Update django-stubs to 4.2.4 ([#4566](https://github.com/cookiecutter/cookiecutter-django/pull/4566))
+
+- Update mypy to 1.5.1 ([#4568](https://github.com/cookiecutter/cookiecutter-django/pull/4568))
+
+## 2023.10.04
+
+
+### Updated
+
+- Update django to 4.2.6 ([#4617](https://github.com/cookiecutter/cookiecutter-django/pull/4617))
+
+- Update coverage to 7.3.2 ([#4616](https://github.com/cookiecutter/cookiecutter-django/pull/4616))
+
+- Update werkzeug to 3.0.0 ([#4608](https://github.com/cookiecutter/cookiecutter-django/pull/4608))
+
+- Update django-redis to 5.4.0 ([#4609](https://github.com/cookiecutter/cookiecutter-django/pull/4609))
+
+- Bump docs Python docker image from 3.11.5 to 3.11.6 ([#4615](https://github.com/cookiecutter/cookiecutter-django/pull/4615))
+
+## 2023.10.03
+
+
+### Changed
+
+- [pre-commit.ci] pre-commit autoupdate ([#4613](https://github.com/cookiecutter/cookiecutter-django/pull/4613))
+
+### Updated
+
+- Bump prod Python docker image from 3.11.5 to 3.11.6 ([#4611](https://github.com/cookiecutter/cookiecutter-django/pull/4611))
+
+- Bump local Python docker image from 3.11.5 to 3.11.6 ([#4612](https://github.com/cookiecutter/cookiecutter-django/pull/4612))
+
+- Auto-update pre-commit hooks ([#4610](https://github.com/cookiecutter/cookiecutter-django/pull/4610))
+
 ## 2023.09.29
 
 
