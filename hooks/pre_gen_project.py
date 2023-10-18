@@ -66,3 +66,7 @@ if "{{ cookiecutter.use_whitenoise }}".lower() == "n" and "{{ cookiecutter.cloud
 if "{{ cookiecutter.mail_service }}" == "Amazon SES" and "{{ cookiecutter.cloud_provider }}" != "AWS":
     print("You should either use AWS or select a different " "Mail Service for sending emails.")
     sys.exit(1)
+
+if "{{ cookiecutter.use_vue }}".lower() == "n":
+    print("You must enable Vue option (use_vue) to use this cookiecutter.")
+    sys.exit(1)

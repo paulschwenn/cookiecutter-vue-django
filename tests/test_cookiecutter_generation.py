@@ -133,7 +133,6 @@ SUPPORTED_COMBINATIONS = [
     {"debug": "y"},
     {"debug": "n"},
     {"use_vue": "y"},
-    {"use_vue": "n"},
 ]
 
 UNSUPPORTED_COMBINATIONS = [
@@ -141,6 +140,7 @@ UNSUPPORTED_COMBINATIONS = [
     {"cloud_provider": "GCP", "mail_service": "Amazon SES"},
     {"cloud_provider": "Azure", "mail_service": "Amazon SES"},
     {"cloud_provider": "None", "mail_service": "Amazon SES"},
+    {"use_vue": "n"},
 ]
 
 

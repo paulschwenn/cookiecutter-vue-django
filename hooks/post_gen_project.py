@@ -245,13 +245,9 @@ def remove_async_files():
         os.remove(file_name)
 
 
-def remove_rewards_files():
-    shutil.rmtree("rewards")
-    shutil.rmtree("vue_frontend/src/rewards")
-
-
 def remove_vue_files():
     shutil.rmtree("vue_frontend")
+    shutil.rmtree("rewards")
 
 
 def remove_vue_pycharm_files():

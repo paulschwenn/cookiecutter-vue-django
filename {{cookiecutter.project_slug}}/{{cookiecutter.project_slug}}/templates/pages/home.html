@@ -1,6 +1,8 @@
 {% raw %}{% extends "base.html" %}
-{% load vue_utils %}
 {% endraw %}
+{%- if cookiecutter.use_vue == "y" -%}{% raw %}
+{% load vue_utils %}
+{% endraw %}{% endif -%}
 {% if cookiecutter.use_vue == "y" %}
 {% raw %}{% block content %}{% endraw %}
 
