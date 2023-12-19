@@ -38,7 +38,7 @@ RUN npm run build && npm cache clean --force
 {%- endif %}
 
 # define an alias for the specific python version used in this file.
-FROM python:3.11.6-slim-bullseye as python
+FROM python:3.11.7-slim-bullseye as python
 
 # Python build stage
 FROM python as python-build-stage
