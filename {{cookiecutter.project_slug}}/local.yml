@@ -135,8 +135,8 @@ services:
     build:
       context: .
       dockerfile: ./compose/local/vite/Dockerfile
-    image: my_awesome_vue_project_local_vite
-    container_name: my_awesome_vue_project_local_vite
+    image: {{ cookiecutter.project_slug }}_local_vite
+    container_name: {{ cookiecutter.project_slug }}_local_vite
     depends_on:
       - django
     volumes:
